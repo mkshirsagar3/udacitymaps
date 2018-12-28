@@ -39,3 +39,8 @@ In the project directory, you can run:
 ## Model
 Model will  be maintained in a context shared by all components
 
+Credits
+
+Markers
+http://www.benjaminkeen.com/google-maps-coloured-markers/
+

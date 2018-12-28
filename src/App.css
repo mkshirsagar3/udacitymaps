@@ -1,8 +1,13 @@
 .App {
-  text-align: center;
-  overflow:none;
+      text-align: center;
+      overflow:none;
+      display:block;
+      max-height:100vh;
+      max-width:100vw;
+  
+      overflow-x: hidden;
+      overflow-y: hidden;
 }
-
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -45,22 +50,54 @@ li {
     }
     .search-view {
         grid-column: 1 / span 2;
-        height:6vh;
+        
+    }
+    .info-tab {
+        grid-column: 1 / 2;
+       // height:
     }
     .list-view {
         grid-column: 1 / 1 ;
         grid-row: 2 /   2;
-        height:50 vh;
+        height:70vw vh;
+        
+         
+    }
+    list-view-split {
+        grid-column: 1 / 1 ;
+        grid-row: 2 /   2;
+        height:70vw vh;
+        overflow-y:none;
+        
+    }
+    
+    poi-select
+    {
+        
+    }
+    list-view-poi
+    {
+        overflow-y: auto;
     }
     .info-view {
-        grid-column: 1 / span 2   ;
-        grid-row:3;
+       
+           grid-column: 1 / span 2;
+           height:30vh;
+      
+    }
+    .info-view-grid {
         height:30vh;
+        width:100vw;
+    
+        display:grid;
+        grid-template-columns:auto;
     }
     .map-view {
         grid-column: 2    ;
         grid-row: 2;
         height:50vh;
+        padding-left:8px;
+        margin-left:8px;
         
     }
     .status-view {
@@ -70,7 +107,7 @@ li {
     }
     .content-pane div {
         
-        border: 1px solid #aaa;
+        border: 0px solid #aaa;
     }
 }
     @media screen and (orientation:landscape)
@@ -81,6 +118,24 @@ li {
         grid-template-columns: 20vw 40vw 40vw;
         
     }
+}
+
+.selected-item
+{
+    background-color:#555;
+    color:white;
+}
+.poi-view
+{
+    background-color: #aaaa;
+    margin: 0;
+    list-style: none;
+    float: left;
+    text-align:left;
+    overflow-y: scroll;
+    max-height:43vh;
+    height:100%;
+    
 }
 
 @keyframes App-logo-spin {
