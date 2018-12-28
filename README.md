@@ -55,7 +55,8 @@ The model is updated using api object provided as prop to underlying components
 ├── logo.svg
 └── serviceWorker.js
 `
-##Resource Files
+
+
 
 ## Resource Files
 /public/img/markers contains all marker icon files
