@@ -38,7 +38,7 @@ Model will  be maintained in a APP
 The model is updated using api object provided as prop to underlying components
 
 ## Files in src
-
+`
 ├── App.css         App CSS
 ├── App.js          App js
 ├── App.test.js
@@ -54,7 +54,7 @@ The model is updated using api object provided as prop to underlying components
 ├── index.js
 ├── logo.svg
 └── serviceWorker.js
-
+`
 ##Resource Files
 
 ## Resource Files
